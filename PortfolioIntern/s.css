@@ -1,0 +1,256 @@
+/* html{
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin:0;
+}
+
+.content-wrapper{
+    margin:0 auto;
+    max-width:900px;
+}
+
+body{
+    background-color: #f6f6f6;
+}
+a{
+    color:#3c8453;
+}
+a:hover{
+    color:#bcaa96;
+}
+
+.btn{
+    background-color: #3c8453;
+    color:#f6f6f6;
+    text-decoration: none;
+} */
+
+ body{
+    background-image: url(bg-gradient.jpg);
+ }
+.resume header::before{
+    background: url(bg-home-office-city.jpg) center/cover;
+    content:"preimage";
+    display: block;
+    height: 375px;
+}
+.h11{
+    text-align: center;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h12{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h21{
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h22{
+    text-decoration:dotted underline;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.h23{
+    text-decoration:dotted underline;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.h24{
+    text-decoration:dotted underline;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.h31{
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h32{
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h33{
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h34{
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h35{
+    font-size:large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.h36{
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.p11{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p12{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p13{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p14{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.resume-section{
+    margin-bottom:50px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #d3d4d6 ;
+}
+#img1{
+    float: right;
+}
+.download-link{
+    font-size: 1.5rem;
+    position:fixed;
+    top:5px;
+    left:5px;   
+}
+
+/* Profile */
+/* Projects */
+.project-item {
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+}
+/* Work Experience */
+
+.work-item{
+    margin-block: 30px;
+}
+.work-details p{
+    margin: 0;
+}
+.work-summary p:first-child{
+    margin-top: 0;
+}
+
+/* Education */
+.education-item{
+    margin-block: 30px;
+}
+.education-item p{
+    margin: 0;
+}
+/* Footer */
+footer{
+    background-color: #222;
+    color: #d3d4d6;
+}
+
+footer a{
+    color:#bcaa96;;
+}
+footer a:hover{
+    color:#3c8453
+}
+
+.socials{
+    list-style-type:none;
+    padding: 0;
+}
+
+.socials img{
+    width: 32px;
+}
+
+.socials li{
+    display: inline-block;
+    margin-left:10px;
+}
+.socials img:hover{
+    opacity: 50%;
+}
+
+@media (max-width:500) {
+    .resume header::befor{
+        height: 200px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width:860px) {
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width:860px) {
+    .project-item{
+        display: flow-root;
+    }
+    .project-item img{
+    float:left;
+    margin-right: 20px;
+}
+}
+
+@media (min-width:650px) and (max-width:859px){
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .project-item img{
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:1250px){
+    .download-link{
+        position: absolute;
+    }
+}
+
+@media (min-width:860px){
+    footer{
+        display :flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:859px){
+    footer{
+        text-align : center;
+        padding: 10px;
+    }
+}
